@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 🔢</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="calcBox">
+        <input type="text" class="displayBox" placeholder="Calculator" readonly>
+
+        <div class="buttons">
+            <button class="operators" onclick="clear()">C</button>
+            <button class="operators" onclick="del()">Del</button>
+            <button class="operators" onclick="getToDisplay()">.</button>
+            <button class="operators" onclick="getToDisplay('÷')">÷</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getToDisplay('7')">7</button>
+            <button onclick="getToDisplay('8')">8</button>
+            <button onclick="getToDisplay('9')">9</button>
+            <button class="operators" onclick="getToDisplay('×')">×</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getToDisplay('4')">4</button>
+            <button onclick="getToDisplay('5')">5</button>
+            <button onclick="getToDisplay('6')">6</button>
+            <button class="operators" onclick="getToDisplay('-')">-</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getToDisplay('1')">1</button>
+            <button onclick="getToDisplay('2')">2</button>
+            <button onclick="getToDisplay('3')">3</button>
+            <button class="operators" onclick="getToDisplay('+')">+</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getToDisplay('0')">0</button>
+            <button class="equal" onclick="getResult('=')">=</button>
+        </div>
+
+    </div>
+
+    <!-- js -->
+    <!-- <script>
+        const displayBox = document.querySelector('.displayBox')
+
+        function getToDisplay(inputValue){
+            displayBox.value = inputValue;
+        }
+
+    </script> -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
